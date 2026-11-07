@@ -108,9 +108,3 @@ jupyter notebook
 ## Scope and limitations
 
 Reviewer and business aggregates can be computed across the full dataset before splitting. A review-level split can therefore share reviewer or business history across training and validation rows, including activity that would be unavailable when scoring a new review. A time-based evaluation with historical-only aggregates would measure performance on future reviews. A reviewer- or business-grouped split would test generalization to unseen entities. The pairwise similarity calculation also materializes a dense matrix for each business, so its memory grows quadratically with that business's review count.
-
-## My contributions
-
-I explored and analyzed the YelpNYC data, researched supervised methods, trained and refined the Random Forest and Gaussian Naive Bayes experiments, and used ELI5 to analyze feature importance for Gaussian Naive Bayes. I also contributed to the project documentation and presentation.
-
-Original collaborative codebase: [fake-review-detection](https://github.com/pinakiweb/fake-review-detection).
